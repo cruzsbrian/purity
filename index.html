@@ -1,0 +1,135 @@
+<doctype html>
+<html>
+    <head>
+        <title>Blacker Purity Test</title>
+        <style>
+            body {
+                margin: 5% 10%;
+            }
+        </style>
+        <script>
+            function countall() {
+                var inputs = document.getElementsByTagName("input");
+                var count = 0;
+
+                for (var i = 0; i < inputs.length; i++) {
+                    if (inputs[i].type === "checkbox" && inputs[i].checked === true) {
+                        count++;
+                    }
+                }
+
+                var scoretext = document.getElementById("score");
+                scoretext.innerText = "You are " + (100 - count) + "% pure.";
+                window.scrollTo(0, document.body.scrollHeight);
+            }
+        </script>
+    </head>
+    <body>
+        Have you...
+        <ol>
+            <li> <input type="checkbox"> Been on 10 or more roofs on campus? </li>
+            <li> <input type="checkbox"> ...in the same night? </li>
+            <li> <input type="checkbox"> ...without touching the ground? </li>
+            <li> <input type="checkbox"> Been on 50 or more roofs on campus? </li>
+            <li> <input type="checkbox"> Slept on a roof on campus? </li>
+            <li> <input type="checkbox"> Climbed the exterior of a building for at least 2 floors? </li>
+            <li> <input type="checkbox"> Stayed in the tunnels for 4 or more hours? (Double for just shadowlands) </li>
+            <li> <input type="checkbox"> Slept in the tunnels? </li>
+            <li> <input type="checkbox"> Gone somewhere sketchy as a date? </li>
+            <li> <input type="checkbox"> Run from security? </li>
+            <li> <input type="checkbox"> Been caught by security (not for alcohol)? </li>
+            <li> <input type="checkbox"> Talked your way out of getting caught by security? </li>
+            <li> <input type="checkbox"> Been CRC'd </li>
+            <li> <input type="checkbox"> Been called to talk to the Deans for non-academics? </li>
+            <li> <input type="checkbox"> Broken into a building off campus? </li>
+            <li> <input type="checkbox"> ….with a "no trespassing" sign? </li>
+            <li> <input type="checkbox"> ….with active security? </li>
+            <li> <input type="checkbox"> …. in another country? </li>
+            <li> <input type="checkbox"> Tagged something with gdbg? </li>
+            <li> <input type="checkbox"> …off campus? </li>
+            <li> <input type="checkbox"> …with a personal tag? </li>
+            <li> <input type="checkbox"> Used a can of spraypaint as a flamethrower? </li>
+            <li> <input type="checkbox"> Been arrested? </li>
+            <li> <input type="checkbox"> ...and bailed out by Tom Mannion? </li>
+            <li> <input type="checkbox"> Had a professor ask you about something sketchy? </li>
+            <li> <input type="checkbox"> Given a tour to a prof/admin? </li>
+            <li> <input type="checkbox"> …another Techer? </li>
+            <li> <input type="checkbox"> …a prefrosh? </li>
+            <li> <input type="checkbox"> ...a non-Techer? </li>
+            <li> <input type="checkbox"> Stayed up for 36+ hours to complete a non-class project (Interhouse, Hellride)? </li>
+            <li> <input type="checkbox"> Done an unapproved prank on campus? </li>
+            <li> <input type="checkbox"> … visible from outside a building? </li>
+            <li> <input type="checkbox"> … on another campus? </li>
+            <li> <input type="checkbox"> … that stayed up for more than 24 hours? </li>
+            <li> <input type="checkbox"> …that led to an investigation? </li>
+            <li> <input type="checkbox"> Broken every dinner rule? </li>
+            <li> <input type="checkbox"> Built or modified a motorized vehicle? </li>
+            <li> <input type="checkbox"> N + 1'd a car? </li>
+            <li> <input type="checkbox"> … + 2? </li>
+            <li> <input type="checkbox"> … + 3? </li>
+            <li> <input type="checkbox"> ...in a trunk? </li>
+            <li> <input type="checkbox"> ...at more than 75 mph? </li>
+            <li> <input type="checkbox"> ...for more than 1 hour? </li>
+            <li> <input type="checkbox"> Hooked up in a trunk? </li>
+            <li> <input type="checkbox"> Gone to Tommy's outside of initiation and negative time? </li>
+            <li> <input type="checkbox"> Updated your sexuality and/or gender? </li>
+            <li> <input type="checkbox"> Gone 110 on the 110? </li>
+            <li> <input type="checkbox"> Been kidnapped/kidnapped someone? </li>
+            <li> <input type="checkbox"> Been showered for playing the ride? </li>
+            <li> <input type="checkbox"> Showered someone for playing the ride? </li>
+            <li> <input type="checkbox"> Electrocuted yourself accidentally? </li>
+            <li> <input type="checkbox"> ...on purpose? </li>
+            <li> <input type="checkbox"> Gone through hyperspace to break into a room? </li>
+            <li> <input type="checkbox"> Slept in hyperspace? </li>
+            <li> <input type="checkbox"> …in purg? </li>
+            <li> <input type="checkbox"> ...in the lounge? </li>
+            <li> <input type="checkbox"> Gotten dumped at dinner by thumb-quorum? </li>
+            <li> <input type="checkbox"> Gotten dumped 2 or more times at dinner? </li>
+            <li> <input type="checkbox"> Rewound roompicks? </li>
+            <li> <input type="checkbox"> Helped filibuster a dinner? </li>
+            <li> <input type="checkbox"> Stayed for more than 2 hours at real noms? </li>
+            <li> <input type="checkbox"> Created a position in real noms? </li>
+            <li> <input type="checkbox"> Owned an illegal pet? </li>
+            <li> <input type="checkbox"> Watched sunrise from Blacker roof? </li>
+            <li> <input type="checkbox"> Fixed something broken in the Hovse before housing found it? </li>
+            <li> <input type="checkbox"> Broken a window? </li>
+            <li> <input type="checkbox"> Played sockwars? </li>
+            <li> <input type="checkbox"> Played pantswars? </li>
+            <li> <input type="checkbox"> Climbed the tree? </li>
+            <li> <input type="checkbox"> Sat on the courtyard swing with 5+ people? </li>
+            <li> <input type="checkbox"> Froshpiled? </li>
+            <li> <input type="checkbox"> Been waterboarded? </li>
+            <li> <input type="checkbox"> Spent over $100 on Blackerwear at once? </li>
+            <li> <input type="checkbox"> Gotten a Blacker tattoo? </li>
+            <li> <input type="checkbox"> Started a tradition? </li>
+            <li> <input type="checkbox"> Permanently modified a room in the house? </li>
+            <li> <input type="checkbox"> Resolved a conflict thru a Hellfight? </li>
+            <li> <input type="checkbox"> Spent all day building interhouse and went to Mannion's instead? </li>
+            <li> <input type="checkbox"> Been hosted overnight by an alum? </li>
+            <li> <input type="checkbox"> Reenacted an Uncle Rob video? </li>
+            <li> <input type="checkbox"> Put up a mural in the tunnels? </li>
+            <li> <input type="checkbox"> Stopped Ricketts from playing the ride? </li>
+            <li> <input type="checkbox"> Finished a final to the Ride? </li>
+            <li> <input type="checkbox"> Spent at least an hour more than expected at a hardware store?  </li>
+            <li> <input type="checkbox"> Been to a Home Depot more than three times in a week? </li>
+            <li> <input type="checkbox"> ...in a day? </li>
+            <li> <input type="checkbox"> Dyed your hair? </li>
+            <li> <input type="checkbox"> Licked a battery? </li>
+            <li> <input type="checkbox"> Gotten something you use from e-waste? </li>
+            <li> <input type="checkbox"> Had clothes on fire? </li>
+            <li> <input type="checkbox"> ...skin? </li>
+            <li> <input type="checkbox"> ...hair? </li>
+            <li> <input type="checkbox"> Been a wizard? </li>
+            <li> <input type="checkbox"> Been a nautical wizard? </li>
+            <li> <input type="checkbox"> Gotten a car unstuck (mud, sand)? </li>
+            <li> <input type="checkbox"> Played fireball? </li>
+            <li> <input type="checkbox"> Spun fire? </li>
+            <li> <input type="checkbox"> Made your own fire project? </li>
+            <li> <input type="checkbox"> Seen a keg? </li>
+            <li> <input type="checkbox"> Done everything in the fire video? </li>
+        </ol>
+
+        <button onclick="countall()">Submit</button>
+        <p id="score"></p>
+    </body>
+</html>
